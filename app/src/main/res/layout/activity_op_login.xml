@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OPLoginActivity">
+
+
+    <com.flaviofaria.kenburnsview.KenBurnsView
+        android:id="@+id/backgroundImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom"
+        android:gravity="center"
+        android:src="@drawable/hajj_blured"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/appLogoImage"
+        android:layout_width="327dp"
+        android:layout_height="137dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/backgroundImage"
+        app:srcCompat="@drawable/rifd_logo" />
+
+    <EditText
+        android:id="@+id/IDEditText"
+        android:layout_width="258dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="@color/secondColor"
+        android:ems="10"
+        android:hint="Enter Email"
+        android:inputType="number"
+        android:shadowColor="@color/firstColor"
+        android:shadowDx="1.2"
+        android:shadowDy="1.2"
+        android:shadowRadius="1.5"
+        android:textColor="@color/secondColor"
+        android:textColorHint="@color/secondColor"
+        android:textCursorDrawable="@null"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/phoneNumberEditText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appLogoImage"
+        app:layout_constraintVertical_bias="0.137" />
+
+    <EditText
+        android:id="@+id/phoneNumberEditText"
+        android:layout_width="258dp"
+        android:layout_height="70dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:backgroundTint="@color/secondColor"
+        android:ems="10"
+        android:hint="Enter Passward"
+        android:inputType="number"
+        android:shadowColor="@color/firstColor"
+        android:shadowDx="1.2"
+        android:shadowDy="1.2"
+        android:shadowRadius="1.5"
+        android:textColor="@color/secondColor"
+        android:textColorHint="@color/secondColor"
+        android:textCursorDrawable="@null"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="292dp" />
+
+    <Button
+        android:id="@+id/confirmButton"
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:background="@drawable/confirm_button_background_style"
+        android:text="Login"
+        android:textColor="@color/secondColor"
+        android:onClick="onClickLogin"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp" />
+
+
+
+
+</android.support.constraint.ConstraintLayout>
